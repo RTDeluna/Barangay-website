@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BIS | Contact Us</title>
+
+		<!-- Favicon Link -->
+		<link rel="shortcut icon" href="../favicon.png" type="image/png" />
+		<!-- bootstrap CSS @5.3.2 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<!-- Font-Awesome @6.2.1 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Custom CSS link -->
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/utilities.css" />
+		<!-- Custom Javascript -->
+		<script src="../js/animation.js"></script>
+	</head>
+	<body>
+		<!--  Navbar Start  -->
+		<nav
+			class="navbar navbar-expand-sm navbar-light bg-light sticky-top border-bottom border-2"
+		>
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand ms-5" href="#">
+					<img src="../img/Logo.png" alt="Logo" height="64" />
+				</a>
+				<!-- Logo End -->
+
+				<!-- Toggler -->
+				<button
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbar-menu"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Toggler End -->
+
+				<!-- Navbar Menu -->
+				<div id="navbar-menu" class="collapse navbar-collapse text-center">
+					<ul class="navbar-nav ms-auto mb-2">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="./contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Navbar Menu End -->
+			</div>
+		</nav>
+		<!-- Navbar End -->
+
+		<!-- Contact Section Start -->
+		<main class="overflow-hidden">
+			<!-- Contact Us Section Start -->
+			<section id="contact">
+				<div>
+					<div class="row">
+						<div
+							id="contact-form-image"
+							class="col-md-6 align-items-center d-flex justify-content-center"
+						>
+							<div class="offset-image-1"></div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="p-4 mt-5">
+								<h1 class="fw-bold text-center">Get in Touch</h1>
+								<p>
+									To schedule an appointment or inquire for more information,
+									please submit a contact form and we will be in touch!
+								</p>
+								<!-- Contact Form Start -->
+								<form
+									action="process.php"
+									class="p-3 text-start text-primary fw-bold"
+								>
+									<div class="mb-3">
+										<label for="name" class="form-label fw-bold">
+											Last Name</label
+										>
+										<input
+											type="text"
+											name="name"
+											id="lastName"
+											class="form-control"
+											placeholder="Enter your last name"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="name" class="form-label fw-bold">
+											First Name</label
+										>
+										<input
+											type="text"
+											name="name"
+											id="firstName"
+											class="form-control"
+											placeholder="Enter your first name"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="phone" class="form-label fw-bold">
+											Your Phone
+										</label>
+										<input
+											type="text"
+											name="phone"
+											id="phone"
+											class="form-control"
+											placeholder="Enter your phone"
+										/>
+									</div>
+
+									<div class="mb-3">
+										<label for="email" class="form-label fw-bold"> Email</label>
+										<input
+											type="email"
+											name="email"
+											id="email"
+											class="form-control"
+											placeholder="Enter your email"
+										/>
+									</div>
+									<div class="mb-3 mt-2">
+										<p class="fw-bold">Choose Certification Type</p>
+										<select class="form-select" form="cert">
+											<option selected>-</option>
+											<option value="barangay-clearance">
+												Barangay Clearance
+											</option>
+											<option value="barangay-permit">Barangay Permit</option>
+											<option value="barangay-indigency">
+												Barangay Indigency
+											</option>
+											<option value="certificate-of-residency">
+												Certificate of Residency
+											</option>
+											<option value="other">Other..</option>
+										</select>
+									</div>
+									<div class="mb-3">
+										<label for="phone" class="form-label fw-bold">
+											Date of Reservation
+										</label>
+										<input
+											type="date"
+											name="date-reserve"
+											id="date-reserve"
+											class="form-control"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="message" class="form-label fw-bold">
+											Your Message</label
+										>
+										<textarea
+											name="message"
+											id="message"
+											cols="30"
+											rows="10"
+											class="form-control"
+											placeholder="Enter your message"
+										></textarea>
+									</div>
+
+									<input class="btn btn-primary" type="button" value="Submit" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Contact Section End -->
+		<footer id="footer" class="text-center text-md-start fs-5">
+			<div class="container">
+				<div class="row my-4 p-4">
+					<!--Main Footer Column 1-->
+					<div
+						class="col-lg-4 col-md-12 mb-md-0 d-flex flex-lg-column justify-content-center align-items-center"
+					>
+						<img
+							class="align-self-center mb-3"
+							src="../img/Logo.png"
+							width="180"
+							alt=""
+						/>
+						<p class="text-center align-self-center">
+							Sangguniang Kabataan ng <br />
+							Barangay Dacasa Uno <br />
+						</p>
+					</div>
+					<!-- Main Footer Column 1 End -->
+
+					<!-- Main Footer Column 2 -->
+					<div class="col-lg-3 col-md-5 mb-4 mb-md-0">
+						<p class="mb-4 text">
+							Barangay Dacasa Uno will be empowered and transformed into a
+							productive, self-relient, responsive, humane and upright to
+							contribute for the betterment of the community.
+						</p>
+					</div>
+					<!-- Main Footer Column 2 End -->
+
+					<!--Grid column-->
+					<div class="col-lg col-md-7 mb-4 mb-md-0">
+						<h5 class="text mb-4 fw-bold">Get In Touch</h5>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="https://www.google.com/maps" target="_blank">
+									<i class="fas fa-map-marker-alt pe-2"></i>Purok Daisy, G.
+									Alvar St., Corner P.M Sobrecarey St., Brgy. Dacasa Uno,
+									Caraga, Davao Oriental
+								</a>
+							</li>
+							<li>
+								<a href="tel: +639753178831">
+									<i class="fas fa-phone"></i> +63 975-317-8831
+								</a>
+							</li>
+							<li>
+								<a href="mailto: barangay.dacasa_uno@gmail.com">
+									<i class="fas fa-envelope pe-1"></i>
+									barangay.dacasa_uno@gmail.com
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.facebook.com/barangay.dacasauno"
+									target="_blank"
+								>
+									<i class="fab fa-facebook-f px-1"></i>
+									Barangay Dacasa Uno
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--Grid column-->
+				</div>
+				<!--Grid row-->
+				<!-- Grid container -->
+			</div>
+
+			<!-- Copyright -->
+			<div class="footer-sub text-center text-light p-2">
+				<p class="mb-0 p-2">
+					Copyright &copy; 2024, All Rights Reserved | Design By Group:Payb
+				</p>
+			</div>
+			<!-- Copyright -->
+		</footer>
+
+		<!-- Bootstrap JavaScript Libraries -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
