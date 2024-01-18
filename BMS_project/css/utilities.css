@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto:wght@300;400&display=swap');
+/* GLobal Variables */
+:root {
+	--global-sans-serif-font: 'Roboto', sans-serif;
+	--global-serif-font: 'Poppins', serif;
+	/* --global-cursive-font: 'Mrs Saint Delafield', cursive; */
+	/* Color Pallete:
+    Initial Primary -  #fbeaff
+    Initial Secondary - #2c73d2  */
+	--primary-color: #1e39be;
+	--secondary-color: #ac0a0a;
+	--accent-color: #2e5fca;
+	--tertiary-color: #c3d6ff;
+	--primary-color-light: #ffffff;
+	--primary-color-dark: #0f104b;
+	--bg-primary-color: #151631;
+}
+
+body {
+	font-family: var(--global-sans-serif-font) !important;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--global-serif-font) !important;
+	color: var(--accent-color) !important;
+}
+
+.text-primary,
+nav .active {
+	color: var(--primary-color) !important;
+	font-weight: 700;
+}
+
+.text-secondary {
+	color: var(--secondary-color) !important;
+	font-family: var(--global-serif-font);
+}
+
+/* Utilities */
+.navbar a:hover {
+	color: var(--secondary-color);
+}
+#footer a {
+	color: var(--primary-color-light) !important;
+}
+#footer a:hover {
+	color: var(--accent-color) !important;
+}
+
+a,
+.btn {
+	transition: all 0.2s ease-in-out !important;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+	opacity: 0.9;
+}
+
+.btn-primary {
+	background-color: var(--primary-color) !important;
+	color: #fff !important;
+	border: 0;
+	width: max-content;
+}
+.btn-secondary {
+	background-color: var(--secondary-color) !important;
+	color: #fff !important;
+	border: 0;
+}
+
+.card-body.overlay-background {
+	width: inherit;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 100;
+}
+.card-title {
+	color: var(--tertiary-color) !important;
+}
+
+/* Animation Utilities */
+
+.reveal {
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* End of Utilities */
+
+/* Navbar */
+nav .active {
+	border-bottom: 3px double var(--primary-color);
+}
+
+/* Footer */
+footer {
+	background: var(--primary-color-dark);
+	color: var(--primary-color-light);
+}
+
+footer h5 {
+	color: var(--primary-color-light) !important;
+}
+
+footer .footer-sub {
+	background: var(--bg-primary-color);
+}
+
+footer ul li {
+	margin-bottom: 1rem;
+}
