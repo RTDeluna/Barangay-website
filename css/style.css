@@ -1,0 +1,88 @@
+/*  Showcase Carousel */
+#showcase-carousel .carousel-item img {
+	object-fit: cover;
+	object-position: center;
+	height: 80vh;
+	overflow: hidden;
+}
+
+/* Home-Services */
+/* !Take Note: Not working well for medium screen tablets */
+#barangay-official .main-content .card {
+	overflow: hidden;
+	height: 30rem;
+	box-shadow: 0.2rem 0.2rem 1rem #c0c0c0;
+}
+
+#barangay-official .main-content .card img {
+	object-fit: cover;
+	object-position: center;
+	height: inherit;
+	width: 100%;
+	transition: transform 0.5s ease;
+}
+
+#barangay-official .main-content .card .card-body {
+	height: 20rem;
+	width: 100%;
+	position: absolute;
+	top: 84%;
+	transition: top 0.3s ease-in;
+}
+
+#barangay-official .main-content .card:hover .card-body {
+	top: 48%;
+	z-index: auto;
+}
+#barangay-official .main-content .card:hover img {
+	transform: scale(1.2);
+}
+
+/* Services */
+#services .card img {
+	border-top: 1rem solid var(--primary-color) !important;
+}
+#services .card {
+	border-color: var(--primary-color);
+}
+
+/* About Page */
+#about-main .about-main-content h2 {
+	margin-bottom: 2rem;
+}
+
+/* Contact Form */
+#contact-form-image .offset-image-1 {
+	background: url('../img/hero-image.png') center center/cover no-repeat;
+	width: 100%;
+	height: 300px;
+	margin: 60px;
+	margin-bottom: 0;
+	border-radius: 10rem 0 10rem 0;
+	box-shadow: -1rem -1rem var(--accent-color);
+}
+
+#contact .row {
+	margin-left: 0 !important;
+}
+
+#contact form input,
+#contact form select,
+#contact form textarea {
+	border-color: var(--primary-color);
+}
+
+#contact form input::placeholder,
+#contact form textarea {
+	opacity: 0.5; /* Firefox */
+	font-size: 0.8rem;
+}
+
+#contact form input:-webkit-input-placeholder {
+	/* Chrome, Safari, Opera */
+	color: var(--primary-color);
+}
+#contact form input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: var(--primary-color);
+}
