@@ -14,8 +14,19 @@
 	--primary-color-light: #ffffff;
 	--primary-color-dark: #0f104b;
 	--bg-primary-color: #151631;
+	--scroll-primary-color: rgb(255, 255, 255);
+	--scroll-secondary-color: rgb(67, 144, 216);
 }
-
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--scroll-primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--scroll-secondary-color);
+	border-radius: 5px;
+}
 body {
 	font-family: var(--global-sans-serif-font) !important;
 	font-size: 1rem;
