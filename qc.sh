@@ -3,4 +3,4 @@ read commitMessage
 cd c/Desktop/Coffee_Shop_project geng-geng/BMS_project
 git add .
 git commit -m "${commitMessage}"
-git push origin ramuel
+git push origin main

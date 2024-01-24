@@ -38,14 +38,6 @@
 	transform: scale(1.2);
 }
 
-/* Services */
-#services .card img {
-	border-top: 1rem solid var(--primary-color) !important;
-}
-#services .card {
-	border-color: var(--primary-color);
-}
-
 /* About Page */
 #about-main .about-main-content h2 {
 	margin-bottom: 2rem;
@@ -54,9 +46,10 @@
 /* Contact Form */
 #contact-form-image .offset-image-1 {
 	background: url('../img/hero-image.png') center center/cover no-repeat;
-	width: 100%;
+	width: 90%;
+	object-fit: cover;
 	height: 300px;
-	margin: 60px;
+	margin-left: 20px;
 	margin-bottom: 0;
 	border-radius: 10rem 0 10rem 0;
 	box-shadow: -1rem -1rem var(--accent-color);
